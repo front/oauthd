@@ -1,0 +1,28 @@
+{
+  "name": "FrontID Production",
+  "desc": "FrontID Production",
+  "url": "https://pay.frontkom.no/oauth",
+  "oauth2": {
+    "authorize": "/authorize",
+    "access_token": "/token",
+    "request": {
+      "url": " https://pay.frontkom.no/api/v1",
+      "cors": false,
+      "query": {
+        "access_token": "{{token}}"
+      },
+      "headers": {
+        "Accept": "application/json"
+      }
+    },
+    "refresh": "/token",
+    "parameters": {
+      "client_secret": "string",
+      "client_id": "string",
+      "scope": {}
+    }
+  },
+  "href": {
+    "provider": "https://pay.frontkom.no"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "sample": {
+    "method": "get",
+    "url": "/v1/customer/profile"
+  }
+}
